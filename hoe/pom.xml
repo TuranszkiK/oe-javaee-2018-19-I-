@@ -14,6 +14,7 @@
         <module>vehiclelevel</module>
         <module>buildingupgrade</module>
         <module>empire</module>
+        <module>cataclysms</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
