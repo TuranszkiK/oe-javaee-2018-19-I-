@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author mfrohlich
  */
+@WebServlet(name="BuildingUpgradeEditorServlet", urlPatterns = {"/buildingupgrade"})
 public class EditorServlet extends HttpServlet {
     private final static String AllBuildingUpgrades = "buildingupgrades";
     @Inject private BuildingUpgradeService bus;
