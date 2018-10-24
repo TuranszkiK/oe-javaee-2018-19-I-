@@ -57,11 +57,11 @@ public class VehicleAccessoryDaoImpl implements BaseDao<VehicleAccessory>{
 
     @Override
     public VehicleAccessory delete(long pId) {
-        VehicleAccessory species = getById(pId);
+        VehicleAccessory vehicleaccessory = getById(pId);
         em.getTransaction().begin();
-        em.remove(species);
+        em.remove(vehicleaccessory);
         em.getTransaction().commit();
-        return species;
+        return vehicleaccessory;
     }
     
 }
