@@ -4,6 +4,7 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>hu.javagladiators.education.hoe.user.dao.model.User</class>
     <class>hu.javagladiators.education.hoe.species.dao.models.Species</class>
+    <class>hu.javagladiators.education.hoe.petlevel.dao.PetLevel</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>NONE</shared-cache-mode>
     <validation-mode>NONE</validation-mode>
