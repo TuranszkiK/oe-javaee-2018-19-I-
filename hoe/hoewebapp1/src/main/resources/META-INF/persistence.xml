@@ -5,6 +5,7 @@
     <class>hu.javagladiators.education.hoe.user.dao.model.User</class>
     <class>hu.javagladiators.education.hoe.species.dao.models.Species</class>
     <class>hu.javagladiators.education.timesheet.dao.model.Timesheet</class>
+    <class>hu.javagladiators.education.hoe.technology.dao.models.Technology</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>NONE</shared-cache-mode>
     <validation-mode>NONE</validation-mode>
