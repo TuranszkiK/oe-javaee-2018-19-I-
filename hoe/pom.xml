@@ -17,6 +17,7 @@
         <module>cataclysms</module>
         <module>factories</module>
         <module>bonusattributes</module>
+		<module>materials</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
