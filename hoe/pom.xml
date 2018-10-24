@@ -10,6 +10,7 @@
     <module>hoewebapp1</module>
         <module>species</module>
         <module>base</module>
+        <module>vehiclelevel</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
