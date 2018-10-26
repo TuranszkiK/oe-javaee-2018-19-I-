@@ -21,7 +21,7 @@ public class BuildingDaoImpl implements BuildingDaoInterface {
     
     @PostConstruct
     private void init() {
-        em = Persistence.createEntityManagerFactory("bikmakk").createEntityManager();
+        em = Persistence.createEntityManagerFactory("hoe").createEntityManager();
     }    
       
     @Override
@@ -31,7 +31,7 @@ public class BuildingDaoImpl implements BuildingDaoInterface {
     }
     
     @Override
-    public Building findBuilding(long id) {
+    public Building findBuildingById(long id) {
         return em.find(Building.class, id);
     }
     
@@ -43,25 +43,28 @@ public class BuildingDaoImpl implements BuildingDaoInterface {
     }
     
     @Override
-    public void updateBuilding(Building building, String name, String desc) {
-        building.setName(name);
-        building.setDescription(desc);
+    public void updateBuilding(long id, Building modifiedBuildingData) {
+        Building b = findBuildingById(id);
+        b.setName(modifiedBuildingData.getName());
+        b.setDescription(modifiedBuildingData.getDescription());
         
         em.getTransaction().begin();
-        em.merge(building);
+        em.merge(b);
         em.getTransaction().commit();
     }
     
     @Override
-    public void removeBuilding(Building building) {
+    public void removeBuilding(long id) {
+        Building b = findBuildingById(id);
+        
         em.getTransaction().begin();   
-        em.remove(building);
+        em.remove(b);
         em.getTransaction().commit();
     }
 
     @Override
     public Building findBuildingByName(String name) {
-        return em.createNamedQuery("Building.name",Building.class)
+        return em.createQuery("SELECT b from Building b where b.name = :name", Building.class)
                 .setParameter("name", name)
                 .getSingleResult();
     }

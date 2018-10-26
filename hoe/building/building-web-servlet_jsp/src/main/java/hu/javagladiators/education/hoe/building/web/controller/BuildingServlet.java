@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author cserof
  */
-@WebServlet(name = "BuildingServlet", urlPatterns = {"/building"})
+@WebServlet(name = "BuildingServlet", urlPatterns = {"/building/edit"})
 public class BuildingServlet extends HttpServlet {
 
     @Inject private BuildingServiceImpl service;
@@ -45,10 +45,10 @@ public class BuildingServlet extends HttpServlet {
             service.create(new Building(request.getParameter("name"), request.getParameter("desc")));
         }
         else {           
-            service.modify(id, request.getParameter("name"), request.getParameter("desc"));
+            service.tryModify(id, request.getParameter("name"), request.getParameter("desc"));
         }
         
-        response.sendRedirect(request.getContextPath() + "/buildingList");
+        response.sendRedirect(request.getContextPath() + "/building/buildingList");
     }
 
     @Override
@@ -62,7 +62,7 @@ public class BuildingServlet extends HttpServlet {
         }
        
         req.setAttribute("building", building);
-        getServletContext().getRequestDispatcher("/building.jsp").include(req, resp);
+        getServletContext().getRequestDispatcher("/building/building.jsp").include(req, resp);
     }
 
     /**

@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author cserof
  */
-@WebServlet(name = "BuildingListServlet", urlPatterns = {"/buildingList"})
+@WebServlet(name = "BuildingListServlet", urlPatterns = {"/building/buildingList"})
 public class BuildingListServlet extends HttpServlet {
 
     @Inject private BuildingServiceImpl service;
@@ -40,7 +40,7 @@ public class BuildingListServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");  
         request.setAttribute("buildings", service.getAll());
         
-        getServletContext().getRequestDispatcher("/buildingList.jsp").include(request, response);
+        getServletContext().getRequestDispatcher("/building/buildingList.jsp").include(request, response);
     }
 
 

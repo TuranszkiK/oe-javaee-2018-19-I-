@@ -39,7 +39,7 @@ public class BuildingDeleteServlet extends HttpServlet {
         
         service.delete(Long.parseLong(request.getParameter("id")));
         
-        response.sendRedirect(request.getContextPath() + "/buildingList");
+        response.sendRedirect(request.getContextPath() + "/building/buildingList");
     }
 
  

@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>Building</h1>
-        <form method="post" action="building">
+        <form method="post" action="edit">
             <div>
                 <span>Id</span><br>
                 <input type="text" readonly="readonly" name="id" value="<c:out value="${building.id}"/>" >

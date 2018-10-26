@@ -6,6 +6,7 @@
     <class>hu.javagladiators.education.hoe.species.dao.models.Species</class>
     <class>hu.javagladiators.education.hoe.bonusattributes.dao.models.BonusAttributes</class>
     <class>hu.javagladiators.education.timesheet.dao.model.Timesheet</class>
+    <class>hu.javagladiators.education.hoe.building.dao.model.models.Building</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>NONE</shared-cache-mode>
     <validation-mode>NONE</validation-mode>

@@ -27,35 +27,43 @@ public class BuildingServiceImpl {
 
     public List<Building> getAll() {return dao.getBuildings();}
 
-    public Building getById(long pId) {return dao.findBuilding(pId);}
+    public Building getById(long pId) {return dao.findBuildingById(pId);}
 
     public void create(Building pData) throws BusinessException {
-
         try {
             dao.findBuildingByName(pData.getName());
+            throw new BusinessException();
         } catch (NoResultException e) {
             dao.insertBuilding(pData);
         }
-        throw new BusinessException();
     }
 
-    public void modify(long pId, String name, String desc) throws BusinessException {
+    public void tryModify(long pId, String name, String desc) throws BusinessException {
         try {
-            dao.findBuildingByName(name);
-        }
-        catch(NoResultException e) {
-            Building b  = dao.findBuilding(pId);
-            if(name!=null && desc !=null){ 
-                dao.updateBuilding(b, name, desc);
+            Building nameMatching = dao.findBuildingByName(name);
+            if (nameMatching.getId() == pId) {
+                modify(pId, name, desc);
+            } else {
+                throw new BusinessException();
             }
         }
-        throw new BusinessException();
+        catch(NoResultException e) {
+            modify(pId, name, desc);
+        }
+    }
+    
+    private void modify(long pId, String name, String desc) {
+        if(name!=null && desc !=null){ 
+                Building b = new Building();
+                b.setName(name);
+                b.setDescription(desc);
+                dao.updateBuilding(pId, b);
+            }
     }
 
     public void delete(long pId) {
         try{
-            Building b = dao.findBuilding(pId);
-            dao.removeBuilding(b);
+            dao.removeBuilding(pId);
         }
         catch(NoResultException e){
             log.info("Nincs ilyen epulet. Id: " + pId);
