@@ -27,11 +27,11 @@
                     <th>${building.id}</th>
                     <th>${building.name}</th>
                     <th>${building.description}</th>
-                    <th><a href="building?id=<c:out value='${building.id}' />">Edit</a></th>
-                    <th><a href="building/delete?id=<c:out value='${building.id}' />">Delete</a></th>
+                    <th><a href="edit?id=<c:out value='${building.id}' />">Edit</a></th>
+                    <th><a href="delete?id=<c:out value='${building.id}' />">Delete</a></th>
                 </tr>
             </c:forEach>
         </table>
-        <a href="building">New building</a>
+        <a href="edit">New building</a>
     </body>
 </html>

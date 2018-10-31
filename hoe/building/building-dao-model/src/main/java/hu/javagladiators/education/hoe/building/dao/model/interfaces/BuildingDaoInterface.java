@@ -7,7 +7,6 @@ package hu.javagladiators.education.hoe.building.dao.model.interfaces;
 
 import hu.javagladiators.education.hoe.building.dao.model.models.Building;
 import java.util.List;
-import javax.persistence.NoResultException;
 
 /**
  *
@@ -15,16 +14,16 @@ import javax.persistence.NoResultException;
  */
 public interface BuildingDaoInterface {
 
-    Building findBuilding(long id);
+    Building findBuildingById(long id);
     
-    Building findBuildingByName(String name) throws NoResultException;
+    Building findBuildingByName(String name);
 
     List<Building> getBuildings();
 
     void insertBuilding(Building building);
 
-    void removeBuilding(Building building);
+    void removeBuilding(long id);
 
-    void updateBuilding(Building building, String name, String desc);
+    void updateBuilding(long id, Building building);
     
 }
