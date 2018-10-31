@@ -17,6 +17,7 @@
         <module>cataclysms</module>
         <module>factories</module>
         <module>bonusattributes</module>
+		    <module>materials</module>
         <module>building</module>
     </modules>
     <properties>
