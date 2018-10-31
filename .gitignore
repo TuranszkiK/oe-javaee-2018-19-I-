@@ -7,3 +7,8 @@
 /building/building-web-servlet_jsp/target/
 /vehicle/vehicle-dao-model/target/
 /vehicle/vehicle-dao-jpa/target/
+/hoe/vehiclelevel/vehiclelevel-dao-model/target/
+/hoe/vehiclelevel/vehiclelevel-dao-jpa/target/
+/hoe/base/base-service-model/target/
+/hoe/vehicle/vehicle-service-cdi/target/
+/hoe/vehicle/vehicle-web-servlet_jsp/target/

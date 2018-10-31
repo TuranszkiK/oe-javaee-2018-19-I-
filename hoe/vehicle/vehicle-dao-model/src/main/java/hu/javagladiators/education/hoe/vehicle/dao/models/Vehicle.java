@@ -5,15 +5,20 @@
  */
 package hu.javagladiators.education.hoe.vehicle.dao.models;
 
+import hu.javagladiators.education.hoe.vehiclelevel.dao.models.VehicleLevel;
 import java.io.Serializable;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
+import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -46,7 +51,10 @@ public class Vehicle implements Serializable {
     public String getDescription() {return description;}
     public void setDescription(String description) {this.description = description;}
         
-
+    @OneToOne(mappedBy = "vehicle", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private VehicleLevel vehicleLevel;
+    public VehicleLevel getVehicleLevel() {return vehicleLevel;}
+    public void setVehicleLevel(VehicleLevel vehicleLevel) {this.vehicleLevel = vehicleLevel;}
     
     @Override
     public int hashCode() {
