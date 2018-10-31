@@ -5,3 +5,5 @@
 /building/building-dao-jpa/target/
 /building/building-service/target/
 /building/building-web-servlet_jsp/target/
+/vehicle/vehicle-dao-model/target/
+/vehicle/vehicle-dao-jpa/target/
