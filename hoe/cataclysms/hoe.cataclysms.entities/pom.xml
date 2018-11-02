@@ -6,13 +6,13 @@
         <artifactId>cataclysms</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>hoe.cataclysms.enitites</artifactId>
+    <artifactId>hoe.cataclysms.entities</artifactId>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
-    <name>hoe.cataclysms.entites</name>
+    <name>hoe.cataclysms.entities</name>
     <dependencies>
         <dependency>
             <groupId>javax.persistence</groupId>

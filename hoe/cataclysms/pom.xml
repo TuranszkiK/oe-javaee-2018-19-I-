@@ -10,9 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>hoe.cataclysms.view</module>
-        <module>hoe.cataclysms.enitites</module>
         <module>hoe.cataclysms.servlets</module>
         <module>hoe.cataclysms.services</module>
         <module>hoe.cataclysms.interfaces</module>
+        <module>hoe.cataclysms.entities</module>
     </modules>
 </project>

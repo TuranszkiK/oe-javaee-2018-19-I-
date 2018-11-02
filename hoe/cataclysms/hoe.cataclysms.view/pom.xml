@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>hu.javagladiators.education.hoe.cataclysms.enitites</artifactId>
+            <artifactId>hoe.cataclysms.entities</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

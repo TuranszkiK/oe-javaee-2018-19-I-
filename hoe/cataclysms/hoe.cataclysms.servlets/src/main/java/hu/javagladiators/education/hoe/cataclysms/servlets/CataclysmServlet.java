@@ -1,7 +1,7 @@
 package hu.javagladiators.education.hoe.cataclysms.servlets;
 
 import hu.javagladiators.education.hoe.cataclysms.view.CataclysmView;
-import hu.javagladiators.education.hoe.cataclysms.enitites.Cataclysm;
+import hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm;
 import hu.javagladiators.education.hoe.cataclysms.interfaces.CataclysmService;
 import hu.javagladiators.education.hoe.cataclysms.services.CataclysmServiceImpl;
 import java.io.IOException;

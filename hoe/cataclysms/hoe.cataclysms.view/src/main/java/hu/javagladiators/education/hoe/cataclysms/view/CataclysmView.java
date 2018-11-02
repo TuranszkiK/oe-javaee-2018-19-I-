@@ -5,7 +5,7 @@
  */
 package hu.javagladiators.education.hoe.cataclysms.view;
 
-import hu.javagladiators.education.hoe.cataclysms.enitites.Cataclysm;
+import hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm;
 import java.util.Date;
 
 public class CataclysmView {

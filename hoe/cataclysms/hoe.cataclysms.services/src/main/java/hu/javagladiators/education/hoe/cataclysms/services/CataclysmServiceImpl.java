@@ -1,6 +1,6 @@
 package hu.javagladiators.education.hoe.cataclysms.services;
 
-import hu.javagladiators.education.hoe.cataclysms.enitites.Cataclysm;
+import hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm;
 import hu.javagladiators.education.hoe.cataclysms.interfaces.CataclysmService;
 import java.text.ParseException;
 import java.util.ArrayList;

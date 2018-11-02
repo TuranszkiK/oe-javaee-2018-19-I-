@@ -5,7 +5,7 @@
  */
 package hu.javagladiators.education.hoe.cataclysms.interfaces;
 
-import hu.javagladiators.education.hoe.cataclysms.enitites.Cataclysm;
+import hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm;
 import java.util.List;
 
 public interface CataclysmService{

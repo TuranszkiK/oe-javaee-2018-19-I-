@@ -1,4 +1,4 @@
-package hu.javagladiators.education.hoe.cataclysms.enitites;
+package hu.javagladiators.education.hoe.cataclysms.entities;
 
 import java.io.Serializable;
 import java.text.DateFormat;
