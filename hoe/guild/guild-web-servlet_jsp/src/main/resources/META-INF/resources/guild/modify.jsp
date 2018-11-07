@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HOE - Regisztráció</title>
+        <title>HOE - Szövetség módosítás</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
@@ -9,11 +9,11 @@
             <fieldset>
                 <legend>Módosítás</legend>
                 <div>
-                    <label>Felhasználó neve</label>
+                    <label>Szövetség neve</label>
                     <input name="name" value="${requestScope['item'].name}">
                 </div>
                 <div>
-                    <label>Jelszó </label>
+                    <label>leírása </label>
                     <input name="description" value="${requestScope['item'].description}" >
                 </div>
                 <div><input type="submit"></div>            
