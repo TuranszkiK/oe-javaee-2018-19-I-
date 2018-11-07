@@ -1,3 +1,11 @@
+/hoe/base/base-service-model/target/
+/hoe/species/species-dao-model/target/
+/hoe/species/species-dao-jpa/target/
+/hoe/base/base-dao-model/target/
+/hoe/hoewebapp1/target/
+/hoe/technology/technology-service-cdi/target/
+/hoe/technology/target/
+/hoe/technology/technology-web-servlet_jsp/target/
 /species/species-dao-model/target/
 /building/building-dao-model/target/
 /base/base-service-model/target/

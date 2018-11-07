@@ -7,6 +7,7 @@
     <class>hu.javagladiators.education.hoe.bonusattributes.dao.models.BonusAttributes</class>
     <class>hu.javagladiators.education.factory.dao.models.Factory</class>
     <class>hu.javagladiators.education.timesheet.dao.model.Timesheet</class>
+    <class>hu.javagladiators.education.hoe.technology.dao.models.Technology</class>
     <class>hu.javagladiators.education.hoe.building.dao.model.models.Building</class>
     <class>hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
