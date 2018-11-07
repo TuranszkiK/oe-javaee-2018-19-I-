@@ -4,6 +4,7 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>hu.javagladiators.education.hoe.user.dao.model.User</class>
     <class>hu.javagladiators.education.hoe.species.dao.models.Species</class>
+    <class>hu.javagladiators.education.hoe.petlevel.dao.PetLevel</class>
     <class>hu.javagladiators.education.hoe.bonusattributes.dao.models.BonusAttributes</class>
     <class>hu.javagladiators.education.factory.dao.models.Factory</class>
     <class>hu.javagladiators.education.timesheet.dao.model.Timesheet</class>

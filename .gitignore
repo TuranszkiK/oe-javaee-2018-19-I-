@@ -1,3 +1,14 @@
+/hoe/petlevel/petlevel-dao-model/target/
+/hoe/base/base-dao-model/target/
+/hoe/base/base-service-model/target/
+/hoe/species/species-dao-model/target/
+/hoe/species/species-dao-jpa/target/
+/hoe/species/species-service-cdi/target/
+/hoe/species/species-web-servlet_jsp/target/
+/hoe/hoewebapp1/target/
+/hoe/petlevel/petlevel-dao-jpa/target/
+/hoe/petlevel/petlevel-services-cdi/target/
+/hoe/petlevel/petlevel-web_servlet-jsp/target/
 /hoe/base/base-service-model/target/
 /hoe/species/species-dao-model/target/
 /hoe/species/species-dao-jpa/target/

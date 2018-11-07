@@ -10,6 +10,7 @@
         <module>hoewebapp1</module>
         <module>species</module>
         <module>base</module>
+        <module>petlevel</module>
         <module>timesheet</module>
         <module>vehiclelevel</module>
         <module>buildingupgrade</module>
