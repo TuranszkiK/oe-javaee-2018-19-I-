@@ -13,6 +13,14 @@
         <module>timesheet</module>
         <module>vehiclelevel</module>
         <module>buildingupgrade</module>
+        <module>FactoryLevel</module>
+        <module>empire</module>
+        <module>cataclysms</module>
+        <module>factories</module>
+        <module>bonusattributes</module>
+		    <module>materials</module>
+        <module>building</module>
+        <module>VehicleAccessories</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
