@@ -1,0 +1,7 @@
+/species/species-dao-model/target/
+/building/building-dao-model/target/
+/base/base-service-model/target/
+/base/base-dao-model/target/
+/building/building-dao-jpa/target/
+/building/building-service/target/
+/building/building-web-servlet_jsp/target/

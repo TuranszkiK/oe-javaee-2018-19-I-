@@ -5,6 +5,11 @@
     <class>hu.javagladiators.education.hoe.user.dao.model.User</class>
     <class>hu.javagladiators.education.hoe.species.dao.models.Species</class>
     <class>hu.javagladiators.education.guild.dao.models.Guild</class>
+    <class>hu.javagladiators.education.hoe.bonusattributes.dao.models.BonusAttributes</class>
+    <class>hu.javagladiators.education.factory.dao.models.Factory</class>
+    <class>hu.javagladiators.education.timesheet.dao.model.Timesheet</class>
+    <class>hu.javagladiators.education.hoe.building.dao.model.models.Building</class>
+    <class>hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>NONE</shared-cache-mode>
     <validation-mode>NONE</validation-mode>
