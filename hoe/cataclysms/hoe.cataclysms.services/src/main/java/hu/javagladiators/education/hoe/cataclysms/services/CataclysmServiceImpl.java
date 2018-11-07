@@ -6,14 +6,16 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
-@RequestScoped
+@Stateless
 public class CataclysmServiceImpl implements CataclysmService{
     
+    @PersistenceContext(name="hoe")
     private EntityManager entityManager;
     
     public CataclysmServiceImpl() {
@@ -47,14 +49,14 @@ public class CataclysmServiceImpl implements CataclysmService{
 
     public Cataclysm addNew(Cataclysm root){
         root.setId(getNextId());
-        entityManager.getTransaction().begin();
+//        entityManager.getTransaction().begin();
         entityManager.persist(root);
-        entityManager.getTransaction().commit();
+ //       entityManager.getTransaction().commit();
         return root;
     }
 
     public Cataclysm update(int id, Cataclysm updatable){
-        entityManager.getTransaction().begin();
+ //       entityManager.getTransaction().begin();
         
         Cataclysm cat = entityManager.find(Cataclysm.class, id);
         cat.setEmpireId(updatable.getEmpireId());
@@ -64,14 +66,14 @@ public class CataclysmServiceImpl implements CataclysmService{
         cat.setDate(updatable.getDate());
         cat.setTime(updatable.getTime());
         entityManager.merge(cat);
-        entityManager.getTransaction().commit();
+ //       entityManager.getTransaction().commit();
         return entityManager.find(Cataclysm.class, updatable.getId());
     }
 
     public void deleteById(int id){
-        entityManager.getTransaction().begin();
+//        entityManager.getTransaction().begin();
         entityManager.remove(entityManager.find(Cataclysm.class, id));
-        entityManager.getTransaction().commit();
+ //       entityManager.getTransaction().commit();
     }
     
     public void close() {

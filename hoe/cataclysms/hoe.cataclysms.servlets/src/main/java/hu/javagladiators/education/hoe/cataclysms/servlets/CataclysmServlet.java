@@ -25,15 +25,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import hu.javagladiators.education.hoe.empire.dao.interfaces.EmpireDao;
+import javax.ejb.EJB;
 
 @WebServlet(name = "CataclysmServlet", urlPatterns = {"/cataclysm"})
 public class CataclysmServlet extends HttpServlet {
 
     @Inject
+    @EJB
     private CataclysmService catServ;
     private final String allCataclysmsAttributeName = "all";
     
     @Inject
+    @EJB
     private EmpireDao empServ;
     
     @Override
