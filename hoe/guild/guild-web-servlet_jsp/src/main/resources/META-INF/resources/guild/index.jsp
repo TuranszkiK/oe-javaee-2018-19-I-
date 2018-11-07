@@ -24,9 +24,9 @@
         
         <form action="main" method="post">
             <fieldset>
-                <legend>Új faj létrehozása</legend>
+                <legend>Új szövetség létrehozása</legend>
                 <div>
-                    <label>Faj neve:</label>
+                    <label>szövetség neve:</label>
                     <input name="name">
                 </div>
                 <div>
