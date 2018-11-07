@@ -7,12 +7,24 @@
     <packaging>pom</packaging>
     <modules>
         <module>user</module>
-    <module>hoewebapp1</module>
+        <module>hoewebapp1</module>
         <module>species</module>
         <module>base</module>
         <module>petlevel</module>
+        <module>timesheet</module>
+        <module>vehiclelevel</module>
+        <module>buildingupgrade</module>
+        <module>FactoryLevel</module>
+        <module>empire</module>
+        <module>cataclysms</module>
+        <module>factories</module>
+        <module>bonusattributes</module>
+		    <module>materials</module>
+        <module>building</module>
+        <module>VehicleAccessories</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
 </project>
