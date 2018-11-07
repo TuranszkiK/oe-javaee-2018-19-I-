@@ -13,6 +13,7 @@
         <module>timesheet</module>
         <module>vehiclelevel</module>
         <module>buildingupgrade</module>
+        <module>FactoryLevel</module>
         <module>empire</module>
         <module>cataclysms</module>
         <module>factories</module>
