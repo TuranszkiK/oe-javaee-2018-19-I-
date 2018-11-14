@@ -10,9 +10,6 @@
     <artifactId>species</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>species-dao-model</module>
-        <module>species-dao-jpa</module>
-        <module>species-service-cdi</module>
         <module>species-web-servlet_jsp</module>
     </modules>
 </project>
