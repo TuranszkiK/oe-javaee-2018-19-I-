@@ -11,9 +11,12 @@
         <module>species</module>
         <module>base</module>
         <module>guild</module>
+        <module>profession</module>
+        <module>petlevel</module>
         <module>timesheet</module>
         <module>vehiclelevel</module>
         <module>buildingupgrade</module>
+        <module>FactoryLevel</module>
         <module>empire</module>
         <module>cataclysms</module>
         <module>factories</module>

@@ -15,6 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -45,6 +46,7 @@ public class Cataclysm implements Serializable {
     @Column(name = "ID")
     private Integer id;
     @Column(name = "EMPIRE_ID")
+    @OneToOne
     private Integer empireId;
     @Size(max = 200)
     @Column(name = "DESCRIPTION")
