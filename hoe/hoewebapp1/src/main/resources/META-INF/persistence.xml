@@ -13,6 +13,7 @@
     <class>hu.javagladiators.education.hoe.technology.dao.models.Technology</class>
     <class>hu.javagladiators.education.hoe.building.dao.model.models.Building</class>
     <class>hu.javagladiators.education.hoe.cataclysms.entities.Cataclysm</class>
+    <class>hu.javagladiators.education.hoe.defensivebuilding.dao.models.DefensiveBuilding</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>NONE</shared-cache-mode>
     <validation-mode>NONE</validation-mode>
