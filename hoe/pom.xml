@@ -25,6 +25,7 @@
         <module>building</module>
         <module>VehicleAccessories</module>
         <module>defensivebuilding</module>
+        <module>Ability</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
